@@ -8,6 +8,7 @@ proxy_wasm_plugin_rust(
     deps = [
         "@crate_index//:log",
         "@crate_index//:proxy-wasm",
+        "@crate_index//:lol_html",
     ],
 )
 

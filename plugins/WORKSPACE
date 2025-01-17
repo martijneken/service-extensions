@@ -190,7 +190,7 @@ crates_repository(
     generator = "@cargo_bazel_bootstrap//:cargo-bazel",
     lockfile = "//:Cargo.Bazel.lock",
     manifests = ["//:Cargo.toml"],
-    supported_platform_triples = ["wasm32-wasi"],
+    #supported_platform_triples = ["wasm32-wasi"],
 )
 
 # Reference: @crate_index//:proxy-wasm (etc)
