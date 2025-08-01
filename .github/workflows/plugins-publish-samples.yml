@@ -1,1 +1,17 @@
-#
+name: Plugins publish samples (TEST)
+
+# Manually invoked. Permissions default to those with repo `write` access.
+# https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
+on: workflow_dispatch
+
+# Default permissions are read only.
+permissions: read-all
+
+jobs:
+  build-and-push-image:
+    name: Publish plugins
+    runs-on: ubuntu-latest
+
+    # Permissions granted to the `GITHUB_TOKEN` for the actions in this job.
+    permissions:
+      contents: read
